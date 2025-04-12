@@ -12,6 +12,7 @@ used.
 
 [<img src="./traffic-lights/screenshot.png" width="232" alt="traffic lights">](https://carloseam.github.io/pure-css-art/traffic-lights/)
 [<img src="./desk-lamp/screenshot.png" width="232" alt="desk light with flickering lights">](https://carloseam.github.io/pure-css-art/desk-lamp/)
+[<img src="./koala-face/screenshot.png" width="232" alt="koala face starring">](https://carloseam.github.io/pure-css-art/koala-face/)
 
 `[<img src="./" width="232" alt="">](https://carloseam.github.io/pure-css-art/)`
 
