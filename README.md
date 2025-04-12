@@ -2,7 +2,7 @@
 
 A collection of CSS art created by me for fun and practice.
 
-## Repo Purpose
+## About
 
 To create fun art using only CSS to transform and decorate HTML elements.
 This will serve as practice and way to test CSS features which are not always
