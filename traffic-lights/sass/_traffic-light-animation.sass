@@ -1,0 +1,102 @@
+// LIGHT CHANGES ANIMATIONS
+$green-light-on: #00da00
+$green-light-off: #088241
+
+$amber-light-on: #e5de00
+$amber-light-off: #b28808
+
+$red-light-on: #ff0000
+$red-light-off: #dc4844
+
+// green on 00da00 - off - 088241
+// amber on e5de00 - off - b28808
+// red on ff0000 - off - dc4844
+// gradient to use for lamp lits - linear-gradient(-93deg, #00DA00 56%, #007300)
+
+@keyframes green-light
+  0%
+    background-color: $green-light-on
+  30%
+    background-color: $green-light-on
+  35%
+    background-color: $green-light-off
+  100%
+    background-color: $green-light-off
+
+@keyframes green-light-shine
+  0%
+    background: linear-gradient(-93deg, $green-light-on 56%, $green-light-off)
+  30%
+    background: linear-gradient(-93deg, $green-light-on 56%, $green-light-off)
+  35%
+    background: linear-gradient(-93deg, #111 56%, #111)
+  100%
+    background: linear-gradient(-93deg, #111 56%, #111)
+
+@keyframes amber-light
+  0%
+    background-color: $amber-light-off
+  30%
+    background-color: $amber-light-off
+  35%
+    background-color: $amber-light-on
+  45%
+    background-color: $amber-light-on
+  50%
+    background-color: $amber-light-off
+  80%
+    background-color: $amber-light-off
+  85%
+    background-color: $amber-light-on
+  95%
+    background-color: $amber-light-on
+  100%
+    background-color: $amber-light-off
+
+@keyframes amber-light-shine
+  0%
+    background: linear-gradient(-93deg, #111 56%, #111)
+  30%
+    background: linear-gradient(-93deg, #111 56%, #111)
+  35%
+    background: linear-gradient(-93deg, $amber-light-on 56%, $amber-light-off)
+  45%
+    background: linear-gradient(-93deg, $amber-light-on 56%, $amber-light-off)
+  50%
+    background: linear-gradient(-93deg, #111 56%, #111)
+  80%
+    background: linear-gradient(-93deg, #111 56%, #111)
+  85%
+    background: linear-gradient(-93deg, $amber-light-on 56%, $amber-light-off)
+  95%
+    background: linear-gradient(-93deg, $amber-light-on 56%, $amber-light-off)
+  100%
+    background: linear-gradient(-93deg, #111 56%, #111)
+
+@keyframes red-light
+  0%
+    background-color: $red-light-off
+  45%
+    background-color: $red-light-off
+  50%
+    background-color: $red-light-on
+  80%
+    background-color: $red-light-on
+  85%
+    background-color: $red-light-off
+  100%
+    background-color: $red-light-off
+
+@keyframes red-light-shine
+  0%
+    background: linear-gradient(-93deg, #111 56%, #111)
+  45%
+    background: linear-gradient(-93deg, #111 56%, #111)
+  50%
+    background: linear-gradient(-93deg, $red-light-on 56%, $red-light-off)
+  80%
+    background: linear-gradient(-93deg, $red-light-on 56%, $red-light-off)
+  85%
+    background: linear-gradient(-93deg, #111 56%, #111)
+  100%
+    background: linear-gradient(-93deg, #111 56%, #111)

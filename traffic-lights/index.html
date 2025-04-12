@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos E Alford">
+    <meta charset="utf-8">
+    <title>Traffic Lights - Pure CSS</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="page-title">Traffic Light - Pure CSS</h1>
+    </header>
+    <main>
+      <article class="traffic-lights-container">
+        <div class="tlights-scene">
+
+          <!-- top post part -->
+          <div class="tlight-post__top-cylinder"></div>
+          <div class="tlight-post__top-lit"></div>
+
+          <!-- bottom post part -->
+          <div class="tlight-post__bottom-cylinder"></div>
+
+          <!-- front face of lamp body -->
+          <div class="tlight-body__front-face"></div>
+          <div class="tlight-body__right-face"></div>
+
+          <!-- single light - green -->
+          <div class="tlight__lamp-section">
+            <div class="tlight-section">
+              <div class="tlight-section__eye-lit">
+                <span class="tlight__green-light--shine"></span>
+              </div>
+              <div class="tlight__green-lamp"></div>
+              <div></div>
+            </div>
+          </div>
+
+          <!-- single light - amber -->
+          <div class="tlight__lamp-section">
+            <div class="tlight-section">
+              <div class="tlight-section__eye-lit">
+                <span class="tlight__amber-light--shine"></span>
+              </div>
+              <div class="tlight__amber-lamp"></div>
+              <div></div>
+            </div>
+          </div>
+
+          <!-- single light - red -->
+          <div class="tlight__lamp-section">
+            <div class="tlight-section">
+              <div class="tlight-section__eye-lit">
+                <span class="tlight__red-light--shine"></span>
+              </div>
+              <div class="tlight__red-lamp"></div>
+              <div></div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+    </main>
+    <footer>
+      <p>Created with love by <a href="https://carlosealford.com">Carlos E Alford</a>.</p>
+      <img src="./images/webshuriken-logo.png" class="ceam-logo-footer" alt="my logo">
+    </footer>
+  </body>
+</html>

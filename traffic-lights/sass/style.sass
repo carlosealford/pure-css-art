@@ -1,0 +1,30 @@
+// base styles
+@use 'base'
+
+// traffic light
+@use 'traffic-light'
+
+body
+  font-size: 18px
+  font-family: cursive, sans-serif
+  background-color: #f2f2f2
+
+a
+  color: #468787
+  transition: transform .22s
+  &:hover
+    transform: scale(1.1)
+  &:active
+    transform: scale(.9)
+
+.page-title
+  margin: 1rem 0
+  font-size: 1.6rem
+  text-align: center
+  color: #468787
+
+.ceam-logo-footer
+  display: block
+  height: auto
+  width: 120px
+  margin: 0 auto
