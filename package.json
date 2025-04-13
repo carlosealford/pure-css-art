@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "sass": "sass sass/main:style --watch"
+    "sass": "sass sass/main:style --watch",
+    "lint:html": "htmlhint '**/*.html'"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/carlosealford/pure-css-art#readme",
   "devDependencies": {
+    "htmlhint": "^1.1.4",
     "sass": "^1.86.3",
     "vite": "^6.2.6"
   }
