@@ -91,7 +91,12 @@
       </section>
     </main>
     <footer>
-      <p>Create with love by <a href="https://carlosealford.com">WebShuriken</a>. 2021</p>
+      <p>Create with love by <a href="https://carlosealford.com">Carlos E Alford</a>. 2021-<span id="wsFooterYear"></span></p>
     </footer>
+    <script>
+      // dynamic footer date
+      const date = new Date();
+      document.querySelector('#wsFooterYear').innerText = date.getFullYear();
+    </script>
   </body>
 </html>
