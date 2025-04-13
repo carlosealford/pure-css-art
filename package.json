@@ -8,7 +8,7 @@
     "dev": "concurrently \"npm run sass\" \"vite\"",
     "build": "vite build",
     "preview": "vite preview",
-    "sass": "sass sass/main:style --watch",
+    "sass": "sass sass/main.sass:style.css --watch",
     "lint:html": "htmlhint '**/*.html'",
     "lint:css": "stylelint 'sass/**/*.sass'",
     "lint": "npm run lint:html && npm run lint:css"
