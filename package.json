@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "sass": "sass sass/main:style --watch",
-    "lint:html": "htmlhint '**/*.html'"
+    "lint:html": "htmlhint '**/*.html'",
+    "lint:css": "stylelint 'sass/**/*.sass'"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,9 @@
   "devDependencies": {
     "htmlhint": "^1.1.4",
     "sass": "^1.86.3",
+    "stylelint": "^16.18.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-scss": "^6.11.1",
     "vite": "^6.2.6"
   }
 }
