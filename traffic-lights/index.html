@@ -63,8 +63,12 @@
       </article>
     </main>
     <footer>
-      <p>Created with love by <a href="https://carlosealford.com">Carlos E Alford</a>.</p>
-      <img src="./images/webshuriken-logo.png" class="ceam-logo-footer" alt="my logo">
+      <p>Create with love by <a href="https://carlosealford.com">Carlos E Alford</a>. 2021-<span id="wsFooterYear"></span></p>
     </footer>
+    <script>
+      // dynamic footer date
+      const date = new Date();
+      document.querySelector('#wsFooterYear').innerText = date.getFullYear();
+    </script>
   </body>
 </html>
