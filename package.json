@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "sass": "sass sass/main:style --watch",
     "lint:html": "htmlhint '**/*.html'",
-    "lint:css": "stylelint 'sass/**/*.sass'"
+    "lint:css": "stylelint 'sass/**/*.sass'",
+    "lint": "npm run lint:html && npm run lint:css"
   },
   "repository": {
     "type": "git",
