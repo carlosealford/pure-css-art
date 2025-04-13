@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/carlosealford/pure-css-art#readme",
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "htmlhint": "^1.1.4",
     "sass": "^1.86.3",
     "stylelint": "^16.18.0",
