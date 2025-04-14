@@ -1,19 +1,29 @@
 *
   box-sizing: border-box
+  position: relative
   margin: 0
   padding: 0
   list-style: none
   text-decoration: none
 
+//olive 807500 128, 117, 0
+//violet 592941 89, 41, 65
+//mint 52b788 82, 183, 136
+//celadon b2d3a8 178, 211, 168
+//vanilla ede5a6 237, 229, 166
+
 :root
-  --theme-main: #ffeb00
-  --title-color: #807500
-  --page-bg-color: #fffef0
+  --color-olive: 128, 117, 0
+  --color-violet: 89, 41, 65
+  --color-mint: 82, 183, 136
+  --color-celadon: 178, 211, 168
+  --color-vanilla: 237, 229, 166
   font-size: 18px
   font-family: 'Rajdhani', sans-serif
 
 body
-  background-color: var(--page-bg-color)
+  background-color: rgb(var(--color-vanilla))
+  color: rgb(var(--color-violet))
 
 // light framework
 .text-center
@@ -23,28 +33,88 @@ body
 .page-header
 
 .page-header__title
-  color: var(--title-color)
+  color: rgb(var(--color-violet))
+
+.page-header__intro
+
+// footer
+.css-art__footer
+  margin-top: 1rem
+  border-top: 2px solid rgb(var(--color-violet))
+
+  a
+    text-decoration: underline
 
 // css gallery holder
 .css-gallery
-.css-gallery__intro
+  display: flex
+  flex-flow: column wrap
+  justify-content: center
+  padding: 1rem .4rem
+  width: 100%
+
+  @media screen and (min-width: 620px)
+    padding: 1.4rem .4rem
+
+  @media screen and (min-width: 768px)
+    padding: 2rem .4rem
+
+.css-gallery__col
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  gap: 2rem
+  width: 100%
 
 // Individual gallery piece
 .css-art
+  min-width: 280px
+  max-width: 420px
 
 .css-art__header
 .css-art__title
 
 .css-art__body
+  display: flex
+  flex-wrap: wrap
 
 .css-art__img
-.css-art__img > img
+  width: 100%
 
-.css-art__stats
+.css-art__img > img
+  height: auto
+  width: 100%
+
 .css-art__stats-list
+  width: 60%
+
 .css-art__stats-list-item
+
 .css-art__stat-title
+  font-weight: 500
+
 .css-art__stat-data
 
 .css-art__btn-nav
+  display: flex
+  flex-flow: column wrap
+  justify-content: space-evenly
+  width: 40%
+
 .css-art__btn
+  border-radius: 4px
+  border: 2px solid rgb(var(--color-olive))
+  padding: .4rem 1rem
+  background: rgb(var(--color-olive))
+  color: rgb(var(--color-vanilla))
+  font-weight: bold
+  text-shadow: 0 1px 1px rgb(var(--color-violet))
+  box-shadow: 0 1px 4px rgba(var(--color-violet), .4)
+  transition: transform .24s
+  transform: scale(1)
+
+  &:hover
+    text-decoration: underline
+  &:active
+    text-decoration: underline
+    transform: scale(.94)
