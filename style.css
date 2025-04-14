@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -7,15 +8,18 @@
 }
 
 :root {
-  --theme-main: #ffeb00;
-  --title-color: #807500;
-  --page-bg-color: #fffef0;
+  --color-olive: 128, 117, 0;
+  --color-violet: 89, 41, 65;
+  --color-mint: 82, 183, 136;
+  --color-celadon: 178, 211, 168;
+  --color-vanilla: 237, 229, 166;
   font-size: 18px;
   font-family: "Rajdhani", sans-serif;
 }
 
 body {
-  background-color: var(--page-bg-color);
+  background-color: rgb(var(--color-vanilla));
+  color: rgb(var(--color-violet));
 }
 
 .text-center {
@@ -23,7 +27,95 @@ body {
 }
 
 .page-header__title {
-  color: var(--title-color);
+  color: rgb(var(--color-violet));
 }
 
-/*# sourceMappingURL=styles.css.map */
+.css-art__footer {
+  margin-top: 1rem;
+  border-top: 2px solid rgb(var(--color-violet));
+}
+.css-art__footer a {
+  text-decoration: underline;
+}
+
+.css-gallery {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 1rem 0.4rem;
+  width: 100%;
+}
+@media screen and (min-width: 620px) {
+  .css-gallery {
+    padding: 1.4rem 0.4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .css-gallery {
+    padding: 2rem 0.4rem;
+  }
+}
+
+.css-gallery__col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.css-art {
+  min-width: 280px;
+  max-width: 420px;
+}
+
+.css-art__body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.css-art__img {
+  width: 100%;
+}
+
+.css-art__img > img {
+  height: auto;
+  width: 100%;
+}
+
+.css-art__stats-list {
+  width: 60%;
+}
+
+.css-art__stat-title {
+  font-weight: 500;
+}
+
+.css-art__btn-nav {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.css-art__btn {
+  border-radius: 4px;
+  border: 2px solid rgb(var(--color-olive));
+  padding: 0.4rem 1rem;
+  background: rgb(var(--color-olive));
+  color: rgb(var(--color-vanilla));
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgb(var(--color-violet));
+  box-shadow: 0 1px 4px rgba(var(--color-violet), 0.4);
+  transition: transform 0.24s;
+  transform: scale(1);
+}
+.css-art__btn:hover {
+  text-decoration: underline;
+}
+.css-art__btn:active {
+  text-decoration: underline;
+  transform: scale(0.94);
+}
+
+/*# sourceMappingURL=style.css.map */
