@@ -6,11 +6,30 @@
   text-decoration: none
   list-style: none
 
+:root
+  /* Theme colours */
+  --color-olive: 128, 117, 0
+  --color-violet: 89, 41, 65
+  --color-mint: 82, 183, 136
+  --color-celadon: 178, 211, 168
+  --color-vanilla: 237, 229, 166
+  font-size: 18px
+
+// body style
+body
+  display: flex
+  flex-flow: column wrap
+  justify-content: space-between
+  height: 100vh
+  border: 8px solid rgb(var(--color-celadon))
+  font-family: sans-serif
+  background-color: #eee
+  color: rgb(var(--color-violet))
+
+header
+  text-align: center
+
 footer
   font-size: .9rem
   text-align: center
   color: #468787
-  @media (min-width: 600px)
-    margin-top: 4rem
-  @media (min-width: 768px)
-    margin-top: 6rem
