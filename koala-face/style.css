@@ -1,10 +1,40 @@
-html {
-  background: #53a7f8;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  /* Theme colours */
+  --color-olive: 128, 117, 0;
+  --color-violet: 89, 41, 65;
+  --color-mint: 82, 183, 136;
+  --color-celadon: 178, 211, 168;
+  --color-vanilla: 237, 229, 166;
+  font-size: 18px;
 }
 
 body {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 100vh;
+  border: 8px solid rgb(var(--color-celadon));
+  font-family: sans-serif;
+  background-color: #eee;
+  color: rgb(var(--color-violet));
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
 }
 
 .koala {
@@ -14,6 +44,7 @@ body {
     align-items: center;
     width: 400px;
     height: 400px;
+    margin: auto;
     background-color: aliceblue;
 }
 
