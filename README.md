@@ -8,6 +8,12 @@ To create fun art using only CSS to transform and decorate HTML elements.
 This will serve as practice and way to test CSS features which are not always
 used.
 
+## Tech stack
+
+- HTML
+- CSS
+- SASS (for more complex designs)
+
 ## Gallery
 
 [<img src="./traffic-lights/screenshot.png" width="232" alt="traffic lights">](https://carloseam.github.io/pure-css-art/traffic-lights/)
@@ -33,3 +39,7 @@ used.
 
 Thanks to [Indian Type Foundry](https://www.indiantypefoundry.com/) for creating
 the font used in this site.
+
+## License
+
+[GNU General Public License v3.0](LICENSE)
